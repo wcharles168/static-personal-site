@@ -25,4 +25,25 @@
     target: '#sideNav'
   });
 
+  var previous_icon = $('#html');
+
+  // Display language name when user hovers over dev-icon
+  $('.list-inline-item').hover(function(){
+
+    previous_icon.css('color', '');
+
+    $('.icon-description').html('');
+    $('.icon-description').html($(this).attr('value'));
+
+  }, function(){
+    // Keeps icon selected by color
+    $(this).css('color', '#BD5D38');
+    previous_icon = $(this);
+  });
+
+  // Automatically selects HTML5
+  $('#html').css('color', '#BD5D38');
+  $('.icon-description').html($('#html').attr('value'));
+
 })(jQuery); // End of use strict
+

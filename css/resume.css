@@ -190,3 +190,15 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+.quote:hover {
+  color: #824027;
+}
+
+.license {
+  position: relative;
+  bottom: 0;
+}
+
+
+
